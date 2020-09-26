@@ -1,12 +1,12 @@
 import { createGlobalStyle } from 'styled-components';
 
-import DaxlineProThin from './DaxlinePro-Light.ttf';
+import DaxlineProThin from './DaxlinePro-Thin.ttf';
 import DaxlineProLight from './DaxlinePro-Light.ttf';
-import DaxlineProRegular from './DaxlinePro-Light.ttf';
-import DaxlineProMedium from './DaxlinePro-Light.ttf';
-import DaxlineProBold from './DaxlinePro-Light.ttf';
-import DaxlineProExtraBold from './DaxlinePro-Light.ttf';
-import DaxlineProBlack from './DaxlinePro-Light.ttf';
+import DaxlineProRegular from './DaxlinePro-Regular.ttf';
+import DaxlineProMedium from './DaxlinePro-Medium.ttf';
+import DaxlineProBold from './DaxlinePro-Bold.ttf';
+import DaxlineProExtraBold from './DaxlinePro-ExtraBold.ttf';
+import DaxlineProBlack from './DaxlinePro-Black.ttf';
 
 export const Typography = createGlobalStyle`
     @font-face {
