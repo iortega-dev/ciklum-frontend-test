@@ -3,9 +3,15 @@ import { useTranslation } from 'react-i18next'
 
 import { Header, Span, Section, BallsContainer } from './styled'
 
+import { Last } from '~Common/interfaces/Jackpot'
+
 import JackpotResultBalls from '~Components/JackpotResultBalls'
 
-const JackpotResults = () => {
+interface JackpotResultsProps {
+  jackpotResults: Last
+}
+
+const JackpotResults = ({jackpotResults}: JackpotResultsProps) => {
 
   const { t } = useTranslation()
 
@@ -14,7 +20,7 @@ const JackpotResults = () => {
       <Header>
         <Span>{t('EuroJackpot.DayResults',{ day: 'Friday 25 Sep 2020'})}</Span>
         <BallsContainer>
-          <JackpotResultBalls numbers={[1,7,9,29,46]} euroNumbers={[9,10]}/>
+          <JackpotResultBalls numbers={jackpotResults.numbers} euroNumbers={jackpotResults.euroNumbers}/>
         </BallsContainer>
       </Header>
     </Section>
