@@ -1,0 +1,24 @@
+{
+  "presets": ["react-app"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ".",
+        "alias": {
+          "~Api": "./src/services/api",
+          "~Assets": "./src/assets",
+          "~Common": "./src/common",
+          "~Components": "./src/components",
+          "~Hooks": "./src/hooks",
+          "~Routes": "./src/routes",
+          "~Screens": "./src/screens",
+          "~Store": "./src/store",
+          "~Test": "./src/__test__",
+          "~Theme": "./src/theme",
+          "~Utils": "./src/utils"
+        }
+      }
+    ]
+  ]
+}
