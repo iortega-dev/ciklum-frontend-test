@@ -16,6 +16,8 @@ const theme = {
     large: "21px"
   },
   spacing:  {
+    0: '0',
+    '0.5': '4px',
     1: '8px',
     2: '16px',
     3: '24px',
@@ -26,6 +28,13 @@ const theme = {
     8: '64px',
     9: '72px',
     10: '80px',
+  },
+  breakpoints: {
+    xs: 'min-width: 0px',
+    sm: 'min-width: 576px',
+    md: 'min-width: 768px',
+    lg: 'min-width: 992px',
+    xl: 'min-width: 1200px',
   }
 };
 
