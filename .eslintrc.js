@@ -43,6 +43,7 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/display-name': 'off',
+    "react/no-unescaped-entities": 'off',
     'spaced-comment': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     "@typescript-eslint/explicit-module-boundary-types": 'off',
@@ -54,7 +55,6 @@ module.exports = {
     "@typescript-eslint/no-unsafe-assignment": 'off',
     "@typescript-eslint/no-unsafe-call": 'off',
     "@typescript-eslint/no-use-before-define": 'off',
-    "@typescript-eslint/no-unescaped-entities": 'off',
     'import/no-extraneous-dependencies': [
       "error",
       {
