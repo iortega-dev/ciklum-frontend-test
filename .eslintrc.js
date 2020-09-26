@@ -54,6 +54,7 @@ module.exports = {
     "@typescript-eslint/no-unsafe-assignment": 'off',
     "@typescript-eslint/no-unsafe-call": 'off',
     "@typescript-eslint/no-use-before-define": 'off',
+    "@typescript-eslint/no-unescaped-entities": 'off',
     'import/no-extraneous-dependencies': [
       "error",
       {
@@ -62,7 +63,7 @@ module.exports = {
     ],
     'import/prefer-default-export': 'off',
     'import/extensions': [
-      'error',
+      'off',
       'ignorePackages',
       {
         'js': 'never',
