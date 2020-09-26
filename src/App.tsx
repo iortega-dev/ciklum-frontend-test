@@ -7,8 +7,8 @@ import { Typography } from '~Assets/fonts'
 // Theme
 import Theme from '~Theme'
 // Local imports
-import Navbar from '~Components/Navbar'
-import Content from '~Components/Content'
+import Navbar from '~Components/App/Navbar'
+import Content from '~Components/App/Content'
 
 function App() {
   return (

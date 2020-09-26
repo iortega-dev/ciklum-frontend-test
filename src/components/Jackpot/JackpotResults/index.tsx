@@ -5,7 +5,7 @@ import { Header, Span, Section, BallsContainer } from './styled'
 
 import { Last } from '~Common/interfaces/Jackpot'
 
-import JackpotResultBalls from '~Components/JackpotResultBalls'
+import JackpotResultBalls from '~Components/Jackpot/JackpotResultBalls'
 
 interface JackpotResultsProps {
   jackpotResults: Last

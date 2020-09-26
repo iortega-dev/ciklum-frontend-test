@@ -6,9 +6,9 @@ import { Container, H1, Header } from './styled'
 
 import { Last } from '~Common/interfaces/Jackpot'
 
-import JackpotDatepicker from '~Components/JackpotDatepicker'
-import JackpotResults from '~Components/JackpotResults'
-import { Loading } from '~Components/Loading'
+import JackpotDatepicker from '~Components/Jackpot/JackpotDatepicker'
+import JackpotResults from '~Components/Jackpot/JackpotResults'
+import { Loading } from '~Components/Common/Loading'
 
 import { getEurojackpotResults } from '~Api'
 
