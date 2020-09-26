@@ -1,6 +1,7 @@
 import React from 'react'
-import { PickersContainer, Select } from './styled'
 import classnames from 'classnames'
+
+import { PickersContainer, Select } from './styled'
 
 const JackpotDatepicker = () => {
   return (
