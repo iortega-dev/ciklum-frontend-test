@@ -1,0 +1,28 @@
+{
+  "Header": {
+    "LogoTitle": "Play Lotto Online and win Millions at Lottoland.com"
+  },
+  "Common": {
+    "Currency": "€"
+  },
+  "EuroJackpot": {
+    "Title": "EUROJACKPOT RESULTS & WINNING NUMBERS",
+    "DayResults": "EuroJackpot Results for {{day}}",
+    "Table": {
+      "Headers": {
+        "Tier": "Tier",
+        "Match": "Match",
+        "Winners": "Winners",
+        "Amount": "Amount"
+      }
+    },
+    "Error": {
+      "Title": "There's no results for the given day",
+      "BackButton": "Back to Home"
+    }
+  },
+  "404": {
+    "Title": "Page not found",
+    "BackButton": "Back to Home"
+  }
+}

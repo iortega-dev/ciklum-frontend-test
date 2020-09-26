@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // Bootstrap grid
 import '~Assets/css/bootstrap-grid.css';
-
+// Internationalization
+import './i18n.ts'
+// Global styles
 import './index.css';
+// App Component
 import App from './App';
 
 ReactDOM.render(
