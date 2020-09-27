@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import classnames from 'classnames'
+import moment from 'moment'
 
 import { Container, H1, Header } from './styled'
 
@@ -15,7 +16,7 @@ import { getEurojackpotResults } from '~Api'
 const HomeScreen = () => {
   const { t } = useTranslation()
 
-  const [error, setError] = useState(null)
+  const [error, setError] = useState<string | undefined>(undefined)
   const [showLoading, setShowLoading] = useState(false)
   const [jackpotResults, setJackpotResults] = useState<Last | undefined>(undefined)
 
@@ -30,10 +31,18 @@ const HomeScreen = () => {
         }
       })
       .catch((error) => {
-        setError(error)
+        if (error.response) {
+          setError("Sorry, there was an error while trying to retrieve the results.");
+        } else if (error.request) {
+          setError("Sorry, there was an error while connecting to the server.")
+        }
       })
       .finally(() => setShowLoading(false))
   }, [])
+
+  const dayChange = (day: Date) => {
+    console.log("dayChange -> day", moment(day))
+  }
 
   return (
     <Container className="container">
@@ -41,11 +50,14 @@ const HomeScreen = () => {
         <H1 className={classnames('col-xs-12', 'col-md-auto')}>
           {t('EuroJackpot.Title')}
         </H1>
-        <JackpotDatepicker />
+        <JackpotDatepicker onChangeDay={dayChange}/>
       </Header>
       {showLoading && <Loading />}
-      {!showLoading && !error &&  jackpotResults && (
+      {!showLoading && !error && jackpotResults && (
         <JackpotResults jackpotResults={jackpotResults} />
+      )}
+      {!showLoading && error && !jackpotResults && (
+        <h1>{error}</h1>
       )}
     </Container>
   )
