@@ -1,7 +1,7 @@
 {
   "name": "ciklum-frontend-test",
   "version": "0.1.0",
-  "homepage": "https://iortega-dev.github.io/ciklum-frontend-test/eurojackpot",
+  "homepage": "https://iortega-dev.github.io/ciklum-frontend-test/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
