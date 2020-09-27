@@ -13,7 +13,7 @@ import { Loading } from '~Components/Common/Loading'
 
 import { getEurojackpotResults } from '~Api'
 
-const HomeScreen = () => {
+const EuroJackpotScreen = () => {
   const { t } = useTranslation()
 
   const [error, setError] = useState<string | undefined>(undefined)
@@ -63,4 +63,4 @@ const HomeScreen = () => {
   )
 }
 
-export default HomeScreen
+export default EuroJackpotScreen
