@@ -1,8 +1,7 @@
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
-  margin-bottom: 70px;
+  margin-bottom: ${(props) => props.theme.spacing[9]};
 `
 
 export const Header = styled.header`

@@ -30,6 +30,7 @@ const theme = {
     8: '64px',
     9: '72px',
     10: '80px',
+    header: '70px'
   },
   breakpoints: {
     xs: 'min-width: 0px',
