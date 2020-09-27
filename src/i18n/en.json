@@ -32,8 +32,12 @@
       }
     },
     "Error": {
-      "Title": "There's no results for the given day",
-      "BackButton": "Back to Home"
+      "Messages": {
+        "NoResultsDay": "Sorry, there are no draw results for the day indicated.",
+        "ControlledError": "Sorry, there was an error while trying to retrieve the results.",
+        "UncontrolledError": "Sorry, there was an error while connecting to the server."
+      },
+      "BackButton": "← Back"
     }
   },
   "404": {
