@@ -23,3 +23,26 @@ export const Select = styled.select`
   font-weight: 300;
   padding: ${(props) => props.theme.spacing['0.5']};
 `
+
+export const Wrapper = styled.div`
+  .DayPickerInput {
+    width: 100%;
+  }
+  .form-control {
+    width: 100%;
+    border-color: ${(props) => props.theme.colors.borderGrey};
+    border-radius: 3px;
+    color: ${(props) => props.theme.colors.textPrimary};
+    font-family: ${(props) => props.theme.fonts[0]};
+    font-size: ${(props) => props.theme.fontSizes.medium};
+    font-weight: 300;
+    padding: ${(props) => props.theme.spacing['0.5']};
+  }
+  .DayPickerInput-OverlayWrapper {
+    width: 100%;
+    
+    @media (${(props) => props.theme.breakpoints.md}) {
+      margin-left: -65px;
+    }
+  }
+`
