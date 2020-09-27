@@ -31,8 +31,12 @@ This project is going to use latest LTS v12.18.x
 
 #### [Yarn](https://yarnpkg.com)
 
-Rating
-This project is using yarn as package manager please don't use npm
+This project is using yarn as package manager, please don't use npm
+
+#### [CORS-Unblock](https://microsoftedge.microsoft.com/addons/detail/cors-unblock/hkjklmhkbkdhlgnnfbbcihcajofmjgbh) (Browser Plugin)
+
+The API endpoints does not send "access-control-allow-origin" header, so it's neccesary to use a plugin like this to get all the request working.
+
 <hr />
 
 ## Installing
@@ -64,6 +68,23 @@ The default language is english, this is indicated at the '`i18n.ts`' file.
 
 It's neccesary to use the translation file '`en.json`' and the translation API methods.
 <br /><br/>
+
+<hr />
+
+## Github Pages - CI
+
+I've implemented a Github workflow, the following workflow is written [here](https://github.com/iortega-dev/ciklum-frontend-test/blob/master/.github/workflows/pushmaster.yml).
+
+When you push to Master branch, it automatically:
+* Checks out a copy of the repository to machine
+* Install dependencies and make a build
+* Deploys to github pages (https://github.com/marketplace/actions/deploy-to-github-pages)
+
+<b>Note</b>: I have made a number of changes to try to make it work properly in Github Pages, such as changing the paths and the root path of the project.
+
+<b>Note 2</b>: I will create a new branch from last commit before changes done for Github pages named "develop-local".
+
+<hr />
 
 # Test Statement
 
