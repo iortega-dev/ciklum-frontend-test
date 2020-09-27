@@ -1,44 +1,105 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Ciklum Frontend Test - Ignacio Ortega
 
-## Available Scripts
+Project created with CRA (Create React App) & Typescript Template
 
-In the project directory, you can run:
+It includes the following stack:
 
-### `yarn start`
+- [Axios](https://github.com/axios/axios)
+- [Bootstrap-grid](https://getbootstrap.com/)
+- [Classnames](https://jedwatson.github.io/classnames/)
+- [i18next](https://www.i18next.com/)
+- [Moment](https://momentjs.com/)
+- [React-day-picker](https://react-day-picker.js.org/)
+- [React-i18next](https://react.i18next.com/)
+- [React-Router-Dom](https://reactrouter.com/)
+- [React-super-responsive-table](https://react-super-responsive-table.netlify.app/)
+- [Rescripts](https://github.com/harrysolovay/rescripts)
+- [Styled Components](https://styled-components.com)
+- [Typescript](https://www.typescriptlang.org/)
 
-Runs the app in the development mode.<br />
+## Getting Started
+
+### Prerequeriments
+
+#### [Node](https://nodejs.org/en/)
+
+This project is going to use latest LTS v12.18.x
+
+#### [Yarn](https://yarnpkg.com)
+
+Rating
+This project is using yarn as package manager please don't use npm
+<hr />
+
+## Installing
+
+Install project dependencies with:
+
+```sh
+yarn
+```
+<hr />
+
+## Developing
+
+### Run project
+
+Start project in development mode with:
+```
+yarn start
+```
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Languages (i18n)
 
-### `yarn build`
+The default language is english, this is indicated at the '`i18n.ts`' file.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+It's neccesary to use the translation file '`en.json`' and the translation API methods.
+<br /><br/>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+# Test Statement
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create a page displaying the current EuroJackpot draw information similar to
+https://www.lottoland.com/en/eurojackpot/results-winning-numbers: you can fetch the
+data at run-time from https://media.lottoland.com/api/drawings/euroJackpot, and get the
+results of a specific date adding a ‘/yyyymmdd’ path like
+https://www.lottoland.com/api/drawings/euroJackpot/20200904).
 
-### `yarn eject`
+### Task Requirements
+<hr />
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Use REACT (preferred way for this job position, but you can use another framework
+if you want to) to implement the page, plus any other library or framework that you
+need
+- The website should work on all WebKit-based devices, and should be responsive e.g.
+look good on desktop as well as tablet and mobile devices
+- Use a private GIT repository to host the project code
+- Use software development best practices and tools based on your experience and
+preferences
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Bonus points (Optional)
+<hr />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+If you have the time and you also want to complete the bonus parts of this task, you can try
+to implement a very basic CI/CD pipeline using available free tools (e.g. GitHub Actions,
+Travis CI, Circle CI).<br />
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<b>Requirement 1</b>: When committing the code to the master branch, a build of the project
+should be triggered, and unit tests should be run: the commit will be executed only if both
+steps are successful.<br />
 
-## Learn More
+<b>Requirement 2</b>: When a commit is successfully executed on the master branch, a
+production build of the latest code version is run, and the project is deployed on a GitHub
+page.<br />
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Reviewing the project
+<hr />
+
+When you are ready, please provide access to your repo to the email addresses that our HR
+will provide you or send a git bundle file so that we can replicate your repo structure in our
+local machine.
