@@ -3,7 +3,8 @@
     "LogoTitle": "Play Lotto Online and win Millions at Lottoland.com"
   },
   "Common": {
-    "Currency": "€"
+    "Currency": "€",
+    "HomeButton": "← Back to Home"
   },
   "EuroJackpot": {
     "Title": "EUROJACKPOT RESULTS & WINNING NUMBERS",
@@ -36,8 +37,7 @@
         "NoResultsDay": "Sorry, there are no draw results for the day indicated.",
         "ControlledError": "Sorry, there was an error while trying to retrieve the results.",
         "UncontrolledError": "Sorry, there was an error while connecting to the server."
-      },
-      "BackButton": "← Back"
+      }
     }
   },
   "404": {

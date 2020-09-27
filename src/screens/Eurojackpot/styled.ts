@@ -34,15 +34,3 @@ export const H2 = styled.h2`
   font-family: ${(props) => props.theme.fonts[0]};
   font-weight: 800;
 `
-
-export const BackLink = styled(Link)`
-  display: inline-block;
-  margin-top:  ${(props) => props.theme.spacing[1]};
-  border-radius: 4px;
-  padding: ${(props) => props.theme.spacing[1]} ${(props) => props.theme.spacing[2]};
-  background: ${(props) => props.theme.colors.lottolandGreen};
-  color: ${(props) => props.theme.colors.white};
-  font-family: ${(props) => props.theme.fonts[0]};
-  font-weight: 400;
-  text-decoration: none;
-`

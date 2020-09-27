@@ -5,12 +5,13 @@ import moment from 'moment'
 import { useHistory, useParams } from 'react-router-dom'
 
 // Styled components
-import { BackLink, Container, H1, H2, Header } from './styled'
+import { Container, H1, H2, Header } from './styled'
 
 // Local imports
 import JackpotDatepicker from '~Components/Jackpot/JackpotDatepicker'
 import JackpotResults from '~Components/Jackpot/JackpotResults'
 import { Loading } from '~Components/Common/Loading'
+import HomeLink from '~Components/Common/HomeLink'
 // Custom hooks
 import { useJackpotDraw } from '~Hooks/useJackpotDraw'
 
@@ -45,7 +46,7 @@ const EuroJackpotScreen = () => {
       {!showLoading && error && !jackpotResults && (
         <>
           <H2>{error}</H2>
-          <BackLink to="/">{t('EuroJackpot.Error.BackButton')}</BackLink>
+          <HomeLink />
         </>
       )}
     </Container>
