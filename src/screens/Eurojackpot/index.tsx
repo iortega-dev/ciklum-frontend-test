@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import classnames from 'classnames'
 import moment from 'moment'
+import { useHistory, useParams } from 'react-router-dom'
 
 import { Container, H1, Header } from './styled'
 
@@ -13,20 +14,32 @@ import { Loading } from '~Components/Common/Loading'
 
 import { getEurojackpotResults } from '~Api'
 
+interface ParamTypes {
+  drawndate: string
+}
+
 const EuroJackpotScreen = () => {
   const { t } = useTranslation()
-
+  const { drawndate } = useParams<ParamTypes>()
+  const history = useHistory()
+  
   const [error, setError] = useState<string | undefined>(undefined)
   const [showLoading, setShowLoading] = useState(false)
   const [jackpotResults, setJackpotResults] = useState<Last | undefined>(undefined)
-
+  
   useEffect(() => {
     setShowLoading(true)
-    getEurojackpotResults()
+    getEurojackpotResults(moment(drawndate, 'DD-MM-YYYY').format('YYYYMMDD'))
       .then(({ data }) => {
-        if (Array.isArray(data.last) && data.last.length) {
+        if (Array.isArray(data.last) && data.last.length > 0) {
+          setError(undefined)
           setJackpotResults(data.last[0])
-        } else {
+        } else if (Array.isArray(data.last) && data.last.length === 0 ) {
+          setError("Sorry, there are no draw results for the day indicated.")
+          setJackpotResults(undefined)
+        }
+        else {
+          setError(undefined)
           setJackpotResults(data.last as Last)
         }
       })
@@ -38,10 +51,11 @@ const EuroJackpotScreen = () => {
         }
       })
       .finally(() => setShowLoading(false))
-  }, [])
+  }, [drawndate])
 
   const dayChange = (day: Date) => {
-    console.log("dayChange -> day", moment(day))
+    const formatedDate = moment(day).format('DD-MM-YYYY')
+    history.push(`/eurojackpot/${formatedDate}`)
   }
 
   return (
