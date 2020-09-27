@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ciklum-frontend-test/precache-manifest.f9b142f3fa6cf32d1c8f0d287ddf2fe7.js"
+  "/ciklum-frontend-test/precache-manifest.d0f97d53ac4363ece8d4c00aec71baf3.js"
 );
 
 self.addEventListener('message', (event) => {
