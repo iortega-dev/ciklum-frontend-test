@@ -29,6 +29,7 @@ export const Wrapper = styled.div`
     width: 100%;
   }
   .form-control {
+    text-align: center;
     width: 100%;
     border-color: ${(props) => props.theme.colors.borderGrey};
     border-radius: 3px;
@@ -37,6 +38,9 @@ export const Wrapper = styled.div`
     font-size: ${(props) => props.theme.fontSizes.medium};
     font-weight: 300;
     padding: ${(props) => props.theme.spacing['0.5']};
+    &:focus {
+      outline-color: ${(props) => props.theme.colors.lottolandGreen};
+    }
   }
   .DayPickerInput-OverlayWrapper {
     width: 100%;
