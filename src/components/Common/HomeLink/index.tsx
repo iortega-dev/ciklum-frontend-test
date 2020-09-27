@@ -19,7 +19,7 @@ export const SLink = styled(Link)`
  */
 const HomeLink = () => {
   const { t } = useTranslation()
-  return <SLink to="/">{t('Common.HomeButton')}</SLink>
+  return <SLink to="/ciklum-frontend-test">{t('Common.HomeButton')}</SLink>
 }
 
 export default HomeLink

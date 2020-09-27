@@ -7,9 +7,9 @@ import EuroJackpotScreen from '~Screens/Eurojackpot'
 const Routes = () => {
   return (
     <Switch>
-      <Route exact path="/" render={() => <Redirect to="/eurojackpot" />} />
-      <Route path="/eurojackpot/:drawndate" component={EuroJackpotScreen} />
-      <Route path="/eurojackpot" component={EuroJackpotScreen} />
+      <Route exact path="/ciklum-frontend-test/" render={() => <Redirect to="/ciklum-frontend-test/eurojackpot" />} />
+      <Route path="/ciklum-frontend-test/eurojackpot/:drawndate" component={EuroJackpotScreen} />
+      <Route path="/ciklum-frontend-test/eurojackpot" component={EuroJackpotScreen} />
       <Route component={NotFoundScreen}/>
     </Switch>
   )
