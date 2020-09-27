@@ -41,7 +41,7 @@
     }
   },
   "404": {
-    "Title": "Page not found",
-    "BackButton": "Back to Home"
+    "Title": "404",
+    "Subtitle": "Page not found."
   }
 }
