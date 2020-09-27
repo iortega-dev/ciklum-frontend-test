@@ -27,8 +27,12 @@ This project is going to use latest LTS v12.18.x
 
 #### [Yarn](https://yarnpkg.com)
 
-Rating
-This project is using yarn as package manager please don't use npm
+This project is using yarn as package manager, please don't use npm
+
+#### [CORS-Unblock](https://microsoftedge.microsoft.com/addons/detail/cors-unblock/hkjklmhkbkdhlgnnfbbcihcajofmjgbh) (Browser Plugin)
+
+The API endpoints does not send "access-control-allow-origin" header, so it's neccesary to use a plugin like this to get all the request working.
+
 <hr />
 
 ## Installing
