@@ -1,11 +1,13 @@
 import React from 'react'
-import { Route, Switch } from 'react-router-dom'
-import HomeScreen from '~Screens/Home'
+import { Redirect, Route, Switch } from 'react-router-dom'
+import EuroJackpotScreen from '~Screens/Eurojackpot'
 
 const Routes = () => {
   return (
     <Switch>
-      <Route exact path="/" component={HomeScreen} />
+      <Route exact path="/" render={() => <Redirect to="/eurojackpot" />} />
+      <Route path="/eurojackpot/:drawndate" component={EuroJackpotScreen} />
+      <Route path="/eurojackpot" component={EuroJackpotScreen} />
     </Switch>
   )
 }
