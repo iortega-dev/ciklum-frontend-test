@@ -6,6 +6,7 @@ import { Header, Span, Section, BallsContainer } from './styled'
 import { Last } from '~Common/interfaces/Jackpot'
 
 import JackpotResultBalls from '~Components/Jackpot/JackpotResultBalls'
+import JackpotResultTable from '~Components/Jackpot/JackpotResultTable'
 
 interface JackpotResultsProps {
   jackpotResults: Last
@@ -22,6 +23,7 @@ const JackpotResults = ({jackpotResults}: JackpotResultsProps) => {
         <BallsContainer>
           <JackpotResultBalls numbers={jackpotResults.numbers} euroNumbers={jackpotResults.euroNumbers}/>
         </BallsContainer>
+        <JackpotResultTable jackpotResults={jackpotResults}/>
       </Header>
     </Section>
   )
