@@ -20,12 +20,17 @@ interface ParamTypes {
 }
 
 const EuroJackpotScreen = () => {
+  // Hooks
   const { t } = useTranslation()
   const { drawndate } = useParams<ParamTypes>()
   const history = useHistory()
-
+  // Custom Hooks
   const {jackpotResults, showLoading, error} = useJackpotDraw(drawndate)
 
+  /**
+   * Function triggered when a date is selected and redirects to it's corresponding page
+   * @param day Date - Selected date
+   */
   const dayChange = (day: Date) => {
     const formatedDate = moment(day).format('DD-MM-YYYY')
     history.push(`/eurojackpot/${formatedDate}`)
