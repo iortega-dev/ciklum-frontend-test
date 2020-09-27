@@ -1,4 +1,8 @@
 # Ciklum Frontend Test - Ignacio Ortega
+<hr/>
+
+## This branch contains the last changes for local development, without CI and route changes to works with Github Pages
+<hr />
 
 Project created with CRA (Create React App) & Typescript Template
 
