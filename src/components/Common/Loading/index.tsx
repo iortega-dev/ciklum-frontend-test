@@ -1,17 +1,20 @@
 import styled from "styled-components";
 
+/**
+ * Styled-component div with CSS to show a Loader in Lottoland Green Color
+ */
 export const Loading = styled.div`
   &,
   &:before,
   &:after {
-    background: #69a507;
+    background: ${(props) => props.theme.colors.lottolandGreen};
     -webkit-animation: load1 1s infinite ease-in-out;
     animation: load1 1s infinite ease-in-out;
     width: 1em;
     height: 4em;
   }
   & {
-    color: #69a507;
+    color: ${(props) => props.theme.colors.lottolandGreen};
     text-indent: -9999em;
     margin: 88px auto;
     position: relative;
