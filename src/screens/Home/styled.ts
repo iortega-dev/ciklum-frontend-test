@@ -10,6 +10,10 @@ export const Header = styled.header`
   justify-content: space-between;
   margin-bottom: ${(props) => props.theme.spacing[3]};
   padding-bottom: ${(props) => props.theme.spacing[2]};
+  padding-top: 0;
+  @media (${(props) => props.theme.breakpoints.md}) {
+    padding-top: ${(props) => props.theme.spacing[2]};
+  }
 `
 
 export const H1 = styled.h1`
