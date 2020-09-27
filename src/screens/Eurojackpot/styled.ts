@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div``
 
@@ -27,4 +28,21 @@ export const H1 = styled.h1`
   @media (${(props) => props.theme.breakpoints.md}) {
     text-align: left;
   }
+`
+
+export const H2 = styled.h2`
+  font-family: ${(props) => props.theme.fonts[0]};
+  font-weight: 800;
+`
+
+export const BackLink = styled(Link)`
+  display: inline-block;
+  margin-top:  ${(props) => props.theme.spacing[1]};
+  border-radius: 4px;
+  padding: ${(props) => props.theme.spacing[1]} ${(props) => props.theme.spacing[2]};
+  background: ${(props) => props.theme.colors.lottolandGreen};
+  color: ${(props) => props.theme.colors.white};
+  font-family: ${(props) => props.theme.fonts[0]};
+  font-weight: 400;
+  text-decoration: none;
 `
