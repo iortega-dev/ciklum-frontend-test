@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // Bootstrap grid
 import '~Assets/css/bootstrap-grid.css';
+// Super Responsive table
+import 'react-super-responsive-table/dist/SuperResponsiveTableStyle.css'
 // Internationalization
 import './i18n.ts'
 // Global styles
