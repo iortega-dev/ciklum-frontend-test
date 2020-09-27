@@ -44,10 +44,10 @@ const EuroJackpotScreen = () => {
         <JackpotResults jackpotResults={jackpotResults} />
       )}
       {!showLoading && error && !jackpotResults && (
-        <>
+        <div className={classnames('d-flex', 'flex-column', 'align-items-center')}>
           <H2>{error}</H2>
           <HomeLink />
-        </>
+        </div>
       )}
     </Container>
   )
