@@ -1,6 +1,5 @@
 import React from 'react'
 import classnames from 'classnames'
-import moment from 'moment'
 import MomentLocaleUtils from 'react-day-picker/moment'
 // English locale for moment calendar
 import 'moment/locale/en-gb'
@@ -9,7 +8,6 @@ import DayPickerInput from 'react-day-picker/DayPickerInput'
 // Styled components
 import { Wrapper, PickersContainer} from './styled'
 
-// Props
 interface JackpotDatepickerProps {
   onChangeDay: (day: Date) => void
 }
