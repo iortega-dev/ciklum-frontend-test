@@ -33,7 +33,7 @@ const EuroJackpotScreen = () => {
    */
   const dayChange = (day: Date) => {
     const formatedDate = moment(day).format('DD-MM-YYYY')
-    history.push(`/eurojackpot/${formatedDate}`)
+    history.push(`/ciklum-frontend-test/eurojackpot/${formatedDate}`)
   }
 
   return (
