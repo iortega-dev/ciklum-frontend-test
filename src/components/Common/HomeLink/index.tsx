@@ -14,7 +14,9 @@ export const SLink = styled(Link)`
   font-weight: 400;
   text-decoration: none;
 `
-
+/**
+ * Styled Link component which redirects to "/"
+ */
 const HomeLink = () => {
   const { t } = useTranslation()
   return <SLink to="/">{t('Common.HomeButton')}</SLink>

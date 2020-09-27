@@ -1,9 +1,10 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-
+// Styled components
 import {STable, SThead, STbody, STr, STh, STd} from './styled'
-
+// Interfaces
 import { Last } from '~Common/interfaces/Jackpot'
+// Auxiliary functions
 import { formatCurrency, int2roman } from './utils'
 
 interface JackpotResultTableProps {

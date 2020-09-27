@@ -1,7 +1,7 @@
 import React from 'react'
-import { Li, Ul } from './styled'
 
 // Styled components
+import { Li, Ul } from './styled'
 
 type JRBProps = {
   numbers: number[]
