@@ -7,7 +7,9 @@ const theme = {
     textSecondary: "#815422",
     lottolandGreen: "#64a407",
     borderGrey: "#d9deda",
-    borderBrown: "#ca7f26"
+    borderBrown: "#ca7f26",
+    borderDarkGrey: "#9c9c9c",
+    white: "#fff"
   },
   fonts: ["DaxlinePro"],
   fontSizes: {
