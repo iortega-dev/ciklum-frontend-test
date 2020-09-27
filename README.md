@@ -61,6 +61,23 @@ The default language is english, this is indicated at the '`i18n.ts`' file.
 It's neccesary to use the translation file '`en.json`' and the translation API methods.
 <br /><br/>
 
+<hr />
+
+## Github Pages - CI
+
+I've implemented a Github workflow, the following workflow is written [here](https://github.com/iortega-dev/ciklum-frontend-test/blob/master/.github/workflows/pushmaster.yml).
+
+When you push to Master branch, it automatically:
+* Checks out a copy of the repository to machine
+* Install dependencies and make a build
+* Deploys to github pages (https://github.com/marketplace/actions/deploy-to-github-pages)
+
+<b>Note</b>: I have made a number of changes to try to make it work properly in Github Pages, such as changing the paths and the root path of the project.
+
+<b>Note 2</b>: I will create a new branch from last commit before changes done for Github pages named "develop-local".
+
+<hr />
+
 # Test Statement
 
 Create a page displaying the current EuroJackpot draw information similar to
