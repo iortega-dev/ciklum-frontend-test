@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dc7e0d11bb75f65f9efabd6d5becca38",
+    "revision": "cd24e011cb54979ac64cffa9f6f50f6c",
     "url": "/ciklum-frontend-test/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ciklum-frontend-test/static/css/2.095ecf75.chunk.css"
   },
   {
-    "revision": "ba8356b2963e6d43b992",
+    "revision": "fe52460087e9a2f251e5",
     "url": "/ciklum-frontend-test/static/css/main.a78c2419.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ciklum-frontend-test/static/js/2.c700d36a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ba8356b2963e6d43b992",
-    "url": "/ciklum-frontend-test/static/js/main.13437555.chunk.js"
+    "revision": "fe52460087e9a2f251e5",
+    "url": "/ciklum-frontend-test/static/js/main.1baa3110.chunk.js"
   },
   {
     "revision": "ca7849a371eb1211bbdf",

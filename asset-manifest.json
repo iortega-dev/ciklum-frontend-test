@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ciklum-frontend-test/static/css/main.a78c2419.chunk.css",
-    "main.js": "/ciklum-frontend-test/static/js/main.13437555.chunk.js",
-    "main.js.map": "/ciklum-frontend-test/static/js/main.13437555.chunk.js.map",
+    "main.js": "/ciklum-frontend-test/static/js/main.1baa3110.chunk.js",
+    "main.js.map": "/ciklum-frontend-test/static/js/main.1baa3110.chunk.js.map",
     "runtime-main.js": "/ciklum-frontend-test/static/js/runtime-main.4ae7be6a.js",
     "runtime-main.js.map": "/ciklum-frontend-test/static/js/runtime-main.4ae7be6a.js.map",
     "static/css/2.095ecf75.chunk.css": "/ciklum-frontend-test/static/css/2.095ecf75.chunk.css",
     "static/js/2.c700d36a.chunk.js": "/ciklum-frontend-test/static/js/2.c700d36a.chunk.js",
     "static/js/2.c700d36a.chunk.js.map": "/ciklum-frontend-test/static/js/2.c700d36a.chunk.js.map",
     "index.html": "/ciklum-frontend-test/index.html",
-    "precache-manifest.d0f97d53ac4363ece8d4c00aec71baf3.js": "/ciklum-frontend-test/precache-manifest.d0f97d53ac4363ece8d4c00aec71baf3.js",
+    "precache-manifest.abbf0939fbd2c317bef51c70a809f9b0.js": "/ciklum-frontend-test/precache-manifest.abbf0939fbd2c317bef51c70a809f9b0.js",
     "service-worker.js": "/ciklum-frontend-test/service-worker.js",
     "static/css/2.095ecf75.chunk.css.map": "/ciklum-frontend-test/static/css/2.095ecf75.chunk.css.map",
     "static/css/main.a78c2419.chunk.css.map": "/ciklum-frontend-test/static/css/main.a78c2419.chunk.css.map",
@@ -28,6 +28,6 @@
     "static/css/2.095ecf75.chunk.css",
     "static/js/2.c700d36a.chunk.js",
     "static/css/main.a78c2419.chunk.css",
-    "static/js/main.13437555.chunk.js"
+    "static/js/main.1baa3110.chunk.js"
   ]
 }
