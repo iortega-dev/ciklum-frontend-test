@@ -1,6 +1,7 @@
 import React from 'react'
 import classnames from 'classnames'
 import MomentLocaleUtils from 'react-day-picker/moment'
+import { useTranslation } from 'react-i18next'
 // English locale for moment calendar
 import 'moment/locale/en-gb'
 // Daypicker input component
@@ -13,6 +14,7 @@ interface JackpotDatepickerProps {
 }
 
 const JackpotDatepicker = ({onChangeDay}: JackpotDatepickerProps) => {
+  const { t } = useTranslation()
   const { formatDate, parseDate } = MomentLocaleUtils
 
   return (
@@ -32,7 +34,7 @@ const JackpotDatepicker = ({onChangeDay}: JackpotDatepickerProps) => {
           parseDate={parseDate}
           onDayChange={onChangeDay}
           format="LL"
-          placeholder={`${formatDate(new Date(), 'DD MMMM YYYY', 'en')}`}
+          placeholder={t('EuroJackpot.DatePlaceholder')}
           dayPickerProps={{
             locale: 'en-gb',
             localeUtils: MomentLocaleUtils,

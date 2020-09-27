@@ -9,6 +9,7 @@
   "EuroJackpot": {
     "Title": "EUROJACKPOT RESULTS & WINNING NUMBERS",
     "DayResults": "EuroJackpot Results for {{day}}",
+    "DatePlaceholder": "Select date to check",
     "Table": {
       "Headers": {
         "Tier": "Tier",
