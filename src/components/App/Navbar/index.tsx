@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <Section>
       <Header className="container">
-        <Link to="/" title={t('Header.LogoTitle')}>
+        <Link to="/ciklum-frontend-test/" title={t('Header.LogoTitle')}>
           <Img src={logo} alt="Lottoland"/>
         </Link>
       </Header>
